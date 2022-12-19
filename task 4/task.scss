@@ -1,0 +1,153 @@
+$mycolor: #ffc107;
+$mycolor1: wheat;
+$mycolor2: aquamarine;
+
+$mybackgroundColor: #0f3648;
+$mybackgroundColor1: #333333;
+$mybackgroundColor2: black;
+$mybackgroundColor3: #ffc10745;
+
+$text: center;
+$mybox: 7px 15px 10px 2px;
+
+$mypadding: 10px;
+$mypadding1: 30px 0px 30px 0px;
+
+$margin: auto;
+$margin1: 30px;
+
+$mywidth: 1200px;
+$width1: 300px;
+$width2: 80px;
+$height: 40px;
+
+$myposition: relative;
+$myleft: 100px;
+$myright: 100px;
+$myright1: 200px;
+$myleft1: 150px;
+
+
+body {
+    background-color: $mybackgroundColor;
+    text-align: $text;
+}
+
+.title {
+    text: {
+        align: center;
+        shadow: 16px 9px 3px black;
+        decoration: underline;
+    }
+
+    font: {
+        family: cursive;
+        style: italic;
+    }
+
+    color: $mycolor;
+    padding-top: $mypadding;
+}
+
+.form {
+    font: {
+        size: 18px;
+        style: italic;
+        family: cursive;
+    }
+
+    text: {
+        shadow: 4px 10px 1px black;
+    }
+
+    padding: $mypadding1;
+    color: $mycolor;
+}
+
+form {
+    background: {
+        image: url("pic.jpg");
+        repeat: no-repeat;
+        size: cover;
+    }
+
+    margin: $margin;
+    width: $mywidth;
+    border: 2px solid black;
+}
+
+.details {
+    padding: $mypadding;
+    margin: $margin1;
+}
+
+.details input {
+    height: $height;
+    width: $width1;
+
+}
+
+
+input {
+    border: {
+        radius: 8px;
+        color: $mycolor;
+    }
+
+    font: {
+        family: cursive;
+        size: 18px;
+    }
+
+    background-color: $mybackgroundColor3;
+    box-shadow: $mybox;
+}
+
+.name {
+    position: $myposition;
+    right: $myright;
+}
+
+.left {
+    position: $myposition;
+    left: $myleft;
+}
+
+.city {
+    position: $myposition;
+    right: $myright1;
+}
+
+.gender {
+    position: $myposition;
+    left: $myleft1;
+}
+
+select {
+    border: {
+        color: $mycolor;
+        radius: 8px;
+    }
+
+    font: {
+        family: cursive;
+        size: 18px;
+    }
+
+    box-shadow: $mybox;
+    background-color: #ffc10745;
+    height: $height;
+    width: $myleft1;
+}
+
+button {
+    border: {
+        color: $mycolor;
+        radius: 8px;
+    }
+
+    background-color: $mycolor;
+    height: $height;
+    width: $width2;
+    margin-bottom: $margin1;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="output.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+
+<!-- <body>
+    <ul>
+        <li><a href="#home">Dashboard</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#technology">Fees</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul> -->
+    <h1 class="title">Student Registration</h1>
+    <div class="form">
+        <form name="myform" id="output">
+            <div class="row">
+                <div class="details">
+                    <label class="name" for="fname">Student Name:</label>
+                    <input class="name" type="text" id="fname" name="fname" value="" style="margin-right:70px">
+                    <label class="left" for="uname" style="position: relative;left: 30px;">User Name:</label>
+                    <input class="left" type="text" id="uname" name="uname" value=""
+                        style="position: relative;left: 70px;">
+                </div>
+                <div class="details">
+                    <label class="name" for="password">Password:</label>
+                    <input class="name" type="password" id="pass" name="password" value="">
+                    <label class="left" for="qualification">Last Qualification:</label>
+                    <input class="left" type="text" id="qualification" name="qualification" value="">
+
+                </div>
+                <div class="details">
+                    <label class="name" for="email">Email:</label>
+                    <input class="name" type="email" id="email" name="email" value="" placeholder="username@mail.com">
+                    <label class="left" for="num">Mobile Number:</label>
+                    <input class="left" type="text" id="number" name="num" value="" style="position: relative;left: 115px;">
+                </div>
+            </div>
+
+            <div style="padding:30px 0px 10px 0px">
+                <label class="city" for="city">City:</label>
+                <select class="city" id="city" name="city">
+                    <option value="australia">Karachi</option>
+                    <option value="canada">Lahore</option>
+                    <option value="usa">Islamabad</option>
+                </select>
+
+                <label class="dob" for="birthday">D.O.B:</label>
+                <input class="dob" style="height: 30px; width: 150px;" type="date" id="birthday" name="birthday">
+
+                <label class="gender" for="gender">gender:</label>
+                <input class="gender" type="radio" id="Male" name="gender" value="">
+                <label class="gender" for="html">Male</label>
+                <input class="gender" type="radio" id="Female" name="gender" value="">
+                <label class="gender" for="css">Female</label>
+
+
+            </div>
+            <div style="padding: 70px 0px 30px 0px;">
+                <label for="courses" style="position: relative;right: 30px;">Courses Apply:</label>
+                <input type="checkbox" id="course1" name="course1" value="Web Engineering">
+                <label for="vehicle1"> Web Engineering</label>
+                <input style="position: relative;left: 20px;" type="checkbox" id="course2" name="course2" value="Information Security">
+                <label style="position: relative; left: 20px;" for="vehicle2"> Information Security</label>
+                <input style="position: relative; left: 40px;" type="checkbox" id="course3" name="course3" value="Software Quality">
+                <label style="position: relative; left: 40px;" for="vehicle3"> Software Quality</label>
+            </div>
+            <button onclick="Login()">Submit</button>
+            <button id="btn" >Clear</button>
+
+        </form>
+
+    </div>
+    
+</body>
+
+</html>

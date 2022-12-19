@@ -1,0 +1,87 @@
+.name{
+  text: {
+    align: center ;
+    decoration: underline;
+  }
+  font: {
+    family: ui-rounded;
+    weight: bold;
+    style: italic;
+  }
+}
+$myColor: #99925c;
+$myColor1: #1a6b2e34;
+$myColor3: #5bc77c8c;
+
+$myFont:  ui-rounded;
+$myFontSize: 26px;
+
+$myWidth: 680px;
+$mywidth: 50px;
+$myheight: 200px;
+
+$myback: #37701d;
+$mybackground: #84ce53;
+
+$myposition: absolute;
+$myposition1: relative;
+$mymargin: 30px;
+$mybottom: 475px;
+$mybottom1: 150px;
+$myleft: 400px;
+body {
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColor;
+  background-color: $mybackground;
+}
+p{
+  color: $myColor1;
+  position: $myposition;
+  bottom: $mybottom;
+  left: $myleft;
+}
+
+img{
+    height: $myheight;
+    width: 300px;
+    margin-left: 60px;
+}
+#row1{
+  background-color: $myback;
+}
+#row3{
+  background-color: $myback;
+}
+table {
+    border: 2px solid black;
+    background-color: #2e2e25;
+    width: 1000px;
+    margin-top: 50px;
+    margin-left: 450px;
+    
+    tr{
+      background-color: #2e2e25;
+    }
+    th {
+      color: rgb(250, 248, 248);
+      padding: 8px;
+    }
+    td {
+      color: rgb(243, 244, 245);
+      padding: 8px;
+    }
+    a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+    }
+  }
+  input{
+    background-color: $myback;
+    height: $mywidth;
+    color: $myColor3;
+    margin-left: $mymargin;
+    position: $myposition1;
+    bottom: $mybottom1;
+  }          

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container p-3 my-3 bg-blue  text-white text-center d-flex justify-content-center flex-direction-row">
+        <div class="border border-2 w-75 m-5 p-5 border-dark rounded-4 bg-secondary">
+            <h1 class="mt-4">LOGIN FORM</h1>
+
+            <div class="row">
+                <div class="col p-5">
+                    <h1>Login</h1>
+                </div>
+            </div>
+            <form name="myform">
+                <div class="row pb-5">
+                    <div class="col-sm-5">
+                        <label class="text-info fw-bold fs-4" for="name">User Name</label>
+                        <input class="border-2 border-info rounded-3 btn-btn-primary w-50 p-1 text-info fw-bold" type="email" id="name" name="email" value="" required placeholder="User Name">
+                    </div>
+                    <div class="col-sm-5">
+                        <label class="text-info fw-bold fs-4" for="password">Password</label>
+                        <input class="border-2 border-info rounded-3 btn-btn-primary w-50 p-1 text-info fw-bold" type="password" name="password" id="output" value="" required placeholder="Password">
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="checkbox" id="remember" name="remember" value="">
+                        <label class="label text-info pt-2" for="remember"> Remember Me</label>
+                    </div>
+                </div>
+            </form>
+            <div class="row p-4">
+                <div class="col-lg-6">
+                    <button class="border-2 border-info rounded-3 btn-btn-primary bg-dark bg-opacity-50 w-75 p-1 text-info fw-bold fs-4" onclick="return Login()">Login</button>
+                </div>
+                <div class="col-lg-6">
+                    <button class="border-2 border-info rounded-3 btn-btn-primary bg-dark bg-opacity-50 w-75 p-1 text-info fw-bold fs-4" onclick="cancel()">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+<!-- <script>
+
+    let a = 0;
+    const array = Array();
+
+    function find_inputs() {
+        var x = document.forms["myform"]["email", "password"].value;
+        if (x == "") {
+            alert("Invalid Credentials, Please Fill out both Fields")
+        }
+        else {
+            array[a] = document.getElementById("name", "psw").value;
+            alert(`Element: ${array[a]} Added at index ${a}`);
+            a++;
+            document.getElementById("name", "psw").value = "";
+        }
+    }
+
+    function display_array() {
+        let e = "<hr/>";
+
+        for (let y = 0; y < array.length; y++) {
+            e += `Element ${y} = ${array[y]}<br/>`;
+        }
+        document.getElementById("Result").innerHTML = e;
+    }
+
+    function Login() {
+        var x = document.forms["myform"]["email", "password"].value;
+        var checkbox = document.getElementById("remember");
+        if (x == "") {
+            alert("Invalid Credentials, Please Fill out both Fields")
+            return false;
+        }
+        if(checkbox.checked == true){
+            alert("Logged in successfully with Remember Me marked as set")
+        }
+        else {
+            alert("Successfully Logged inn..")
+        }
+    }
+
+    function cancel() {
+        document.getElementById("output").value='';
+        document.getElementById("name").value='';
+        alert("Text Cleared")            
+    }
+
+</> -->
